@@ -1,0 +1,25 @@
+/* Back to top  */
+.backtotop {
+  position: fixed;
+  bottom: 2.625rem;
+  right: 1.25rem;
+  height: 3.125rem;
+  width: 3.125rem;
+  line-height: 3.125rem;
+  text-align: center;
+  background-color: $color-primary;
+  border-radius: 50%;
+  display: none;
+  z-index: 8888;
+}
+
+.backtotop a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.125rem;
+  display: block;
+
+  @include mobile-sm {
+    font-size: 1rem;
+  }
+}

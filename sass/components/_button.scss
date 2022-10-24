@@ -1,0 +1,77 @@
+.btn--white {
+  @include btn(2px solid $color-white, 5px, transparent, 0.75rem, 2.8rem);
+
+  @include Text(1rem, $fw-700, $color-white);
+  line-height: 1.875rem;
+
+  &:hover {
+    background-color: #fff;
+    color: $color-primary;
+  }
+
+  @include mobile-sm {
+    padding: 0.625rem 1.3rem;
+  }
+}
+
+.btn--orange {
+  @include btn(2px solid $color-primary, 5px, $color-primary, 0.75rem, 2.8rem);
+
+  @include Text(1rem, $fw-700, $color-white);
+  line-height: 1.875rem;
+
+  &:hover {
+    opacity: 0.8;
+    color: $color-white;
+  }
+
+  @include mobile-sm {
+    padding: 0.625rem 1.3rem;
+  }
+}
+
+.btn--orange-light {
+  @include btn(2px solid $color-primary, 5px, $color-primary, 0.75rem, 2.8rem);
+
+  @include Text(1rem, $fw-700, $color-white);
+  line-height: 1.875rem;
+
+  &:hover {
+    opacity: 0.8;
+    color: $color-white;
+    background-color: $color-primary;
+  }
+
+  @include mobile-sm {
+    padding: 0.625rem 1.3rem;
+  }
+}
+
+.btn-search-err {
+  @include Text(1.125rem, $fw-600, $color-white);
+  background-color: $color-primary;
+  padding: 0 2.5rem;
+  letter-spacing: 0;
+  border: none;
+  height: 3.4rem;
+  display: inline-block;
+  border-radius: 6px;
+
+  &:hover {
+    opacity: 0.8;
+    color: $color-white;
+    background-color: $color-primary;
+  }
+
+  @include mobile-sm {
+    padding: 0.625rem 1.3rem;
+  }
+}
+
+.btn__search-dark {
+  background-color: $bg-dark;
+  color: $font-dark;
+  &:focus {
+    background-color: $bg-dark;
+  }
+}

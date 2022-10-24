@@ -1,0 +1,61 @@
+.title-primary {
+  margin: 0;
+  @include Text(3.375rem, $fw-600, $color-white);
+  text-transform: capitalize;
+  line-height: 4rem;
+
+  @include mobile-md {
+    @include Text(2.5rem, $fw-600, $color-white);
+    line-height: 3.125rem;
+  }
+
+  @include mobile-sm {
+    @include Text(1.75rem, $fw-600, $color-white);
+    line-height: 2.375rem;
+  }
+}
+
+.title-secondary {
+  margin: 0;
+  @include Text(2.375rem, $fw-600, $color-black);
+  margin-bottom: 1.5rem;
+  line-height: 3rem;
+
+  @include mobile-md {
+    @include Text(2rem, $fw-600, $color-black);
+    line-height: 2.5rem;
+  }
+
+  @include mobile-sm {
+    @include Text(1.625rem, $fw-600, $color-black);
+    line-height: 2.25rem;
+  }
+}
+
+.title-secondary-darkmode {
+  margin: 0;
+  @include Text(2.375rem, $fw-600, $color-white !important);
+  margin-bottom: 1.5rem;
+  line-height: 3rem;
+
+  @include mobile-md {
+    @include Text(2rem, $fw-600, $color-white !important);
+    line-height: 2.5rem;
+  }
+
+  @include mobile-sm {
+    @include Text(1.625rem, $fw-600, $color-white !important);
+    line-height: 2.25rem;
+  }
+}
+
+.title-section {
+  margin: 0;
+  letter-spacing: 1px;
+  line-height: 1.875rem;
+  @include Text(1.25rem, $fw-400, $color-primary);
+
+  @include mobile-sm {
+    @include Text(1rem, $fw-400, $color-primary);
+  }
+}

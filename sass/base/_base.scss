@@ -1,0 +1,145 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 100%;
+  scroll-behavior: smooth;
+}
+
+body {
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  @include desktop-xxl {
+    max-width: 1200px;
+  }
+}
+
+a{
+  text-decoration: none!important;
+}
+// .container {
+//   display: flex;
+//   justify-content: space-between;
+//   align-items: center;
+//   width: 1200px !important;
+// }
+//padding
+
+//margin
+p{
+  font-size: 1.125rem;
+  color: $color-grey-1;
+  margin-top: 0.3125rem;
+  line-height: 1.625rem;
+}
+.container{
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.row{
+  margin-left: -15px!important;
+  margin-right: -15px!important;
+}
+.col{
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.subtitle{
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 1px;
+    color: $color-primary;
+    display: block;
+}
+.title{
+    font-size: 38px;
+    line-height: 48px;
+    font-weight: 600;
+}
+.btn-primary{
+  color: $color-white;
+  padding: 12px 45px;
+  font-size: 16px;
+  line-height: 30px;
+  font-weight: 700;
+  transition: 0.3s ease-in;
+  border-radius:$border-radius;
+  border: 2px solid transparent;
+  background-color: $color-primary;
+}
+.btn-primary:hover{
+  color: $color-white;
+    background-color: $color-primary;
+    border: 2px solid $color-primary;
+    opacity: 0.8;
+}
+@media (min-width:400px){
+  .title{
+    font-size:1.875rem!important ;
+    line-height: 2.375rem!important;
+  }
+}
+@media (min-width:568.1px){
+
+}
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+@media (min-width:600px){
+	.title{
+	  font-size: 2rem!important;
+	  line-height: 2.5rem!important;
+	}
+}
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+
+@media (min-width:992px){
+  .container{
+    max-width: 960px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .pl-lg-5{
+    padding-left: 3rem!important;
+  }
+}
+@media (min-width:1080px){
+  .title{
+    font-size: 2.375rem!important;
+    line-height: 3rem!important;
+    font-weight: 600;
+  }
+}
+@media (min-width:1200px){
+  .container{
+    max-width: 1140px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+@media (min-width:1280px){
+  .container{
+    max-width: 1200px;
+  }
+}
+

@@ -1,0 +1,76 @@
+body {
+  font-family: sans-serif;
+  font-size: 1rem; 
+  font-weight: 400;
+
+  // responsive
+  @include desktop-xl {
+    p {
+      font-size: 1.125rem;
+    }
+
+    h3 {
+      font-size: 2.375rem;
+    }
+
+    h6 {
+      font-size: 1.25rem;
+    }
+
+    a {
+      font-size: 1.25rem;
+    }
+
+    span {
+      font-size: 1.125rem;
+    }
+  }
+  @include tablet-lg {
+  }
+
+  @include mobile-md {
+    a {
+      font-size: 1.125rem;
+    }
+
+    span {
+      font-size: 1rem;
+    }
+  }
+  @include mobile-sm {
+    p {
+      font-size: 1rem;
+    }
+    h3 {
+      font-size: 1.625rem;
+    }
+    h6 {
+      font-size: 1rem;
+    }
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+span,
+p {
+  font-family: "Quicksand", sans-serif;
+}
+// Footer: "Quicksand" ==> h5
+
+h6 {
+  font-family: "Pacifico", cursive, sans-serif;
+}
+
+a,
+q {
+  font-family: "Segoe UI", sans-serif;
+}
+
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+  font-family: "Quicksand", sans-serif;
+}

@@ -1,0 +1,45 @@
+.text-content-white {
+  @include Text(1rem, $fw-400, $color-white);
+  line-height: 1.75rem;
+}
+
+.text-content {
+  @include Text(1.125rem, $fw-400, $font-color);
+  line-height: 1.75rem;
+
+  @include mobile-sm {
+    @include Text(1rem, $fw-400, $font-color);
+    line-height: 1.625rem;
+  }
+}
+
+.text-link {
+  @include Text(1.5rem, $fw-600, $color-black-3);
+
+  @include mobile-md {
+    @include Text(1.25rem, $fw-600, $color-black-3);
+  }
+
+  @include mobile-sm {
+    @include Text(1.25rem, $fw-600, $color-black-3);
+  }
+}
+
+.text-progress {
+  @include Text(1.125rem, $fw-700, $color-black-3);
+  margin-bottom: 0.625rem;
+}
+
+.text-team {
+  @include Text(1.5rem, $fw-700, $color-black-3);
+  margin-top: 1.56rem;
+  display: block;
+
+  &:hover {
+    color: $color-primary;
+  }
+
+  @include mobile-sm {
+    @include Text(1.125rem, $fw-700, $color-black-3);
+  }
+}

@@ -1,0 +1,122 @@
+// Banner subsite
+.banner-subsite {
+  background-image: $bg-linear-1, url(../../img/banner2.jpg);
+  @include bg-img(cover, no-repeat, center);
+  background-attachment: fixed;
+  min-height: 21.875rem;
+  .header {
+    padding: 2.5rem 0 1.25rem 0;
+    .navbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      &__left {
+        .navbar-brand {
+          @include Text(2.25rem, $fw-700, $color-white);
+          text-decoration: none;
+        }
+      }
+      &__right {
+        &--search {
+          position: relative;
+          .search__input {
+            padding: 0.625rem 3.125rem 0.625rem 1.25rem;
+            @include Text(1rem, $fw-400, $font-color);
+            border-radius: 0.375rem;
+            ::-webkit-input-placeholder {
+              color: $color-primary;
+            }
+          }
+          a {
+            text-decoration: none;
+            list-style: none;
+            color: $font-color;
+            .search__icon {
+              font-size: 0.9375rem;
+              position: absolute;
+              top: 50%;
+              right: 0.9375rem;
+              transform: translate(-50%, -50%);
+            }
+          }
+
+          @include mobile-md {
+            display: none;
+          }
+        }
+        &--darkmode {
+          display: block;
+          padding: 0 1.25rem;
+          @include Text(1.5625rem, "", $color-white);
+        }
+        &--menubar {
+          cursor: pointer;
+          @include Text(1.875rem, "", $color-white);
+        }
+      }
+    }
+    .breadcrumbs {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding-top: 5rem;
+      &__path {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        a {
+          display: block;
+          text-decoration: none;
+          @include Text(1.125rem, $fw-600, $color-primary);
+        }
+        .breadcrumbs__page {
+          i {
+            @include Text(0.75rem, $fw-600, $color-white);
+            margin: 0 0.75rem;
+          }
+          span {
+            @include Text(1.125rem, $fw-600, $color-white);
+          }
+        }
+      }
+    }
+  }
+
+  .form-control {
+    border: 1px solid #fff !important;
+  }
+
+  .form-control:focus {
+    color: #212529;
+    border-color: #fff !important;
+    outline: none;
+    box-shadow: none !important;
+  }
+}
+
+// Banner subsite darkmode
+.banner-subsite-darkmodee {
+  .header {
+    .navbar {
+      .navbar__right {
+        .navbar__right--search {
+          .search__input {
+            background-color: $bg-dark !important;
+          }
+          .form-control {
+            border: 1px solid $bg-dark !important;
+            &:focus {
+              color: $font-dark;
+              border-color: $bg-dark !important;
+              outline: none;
+              box-shadow: none !important;
+            }
+          }
+          a {
+            color: $font-dark;
+          }
+        }
+      }
+    }
+  }
+}
